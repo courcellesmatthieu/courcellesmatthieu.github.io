@@ -58,6 +58,7 @@
   <header>
     <!-- Titre principal de la page (il ne devrait y avoir qu'un seul h1 par page) -->
     <h1>Bienvenue sur mon site</h1>
+    
 
 
     <!-- Petit texte introductif sous le titre -->
@@ -75,7 +76,7 @@
         Par exemple, href="#about" va faire défiler la page jusqu'à l'élément qui a id="about".
       -->
       <a href="#about">À propos</a>
-      <a href="#projects">Mes projets</a>
+      <a href="blog.html">Blogue</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -84,12 +85,36 @@
   <section id="about">
     <!-- Titre de niveau 2 (moins important que h1, mais plus que le texte normal) -->
     <h2>À propos de moi</h2>
+    
+
+
+
+
+
+
+
+
+
+
 
     <!-- Paragraphe de texte -->
     <p>
-      Bonjour ! Je m'appelle MATTTTTTTTTTTTTTT et j'apprends à créer des sites web.
+      Bonjour ! Je m'appelle MATTTTTTTTTTTTTTT et j'apprends à créer des (un seul) sites web.
       C'est ma toute première page en HTML.
     </p>
+
+
+
+
+
+
+    <figure style="text-align:center;">
+  <img src="image/images.jpg" style="width:200px;">
+  <figcaption>Rare photo de moi durant  une pause pendant la création du chef d'oeuvre</figcaption>
+</figure>
+
+
+
   </section>
 
   <!-- Deuxième section : liste de projets -->
@@ -110,13 +135,31 @@
     <h2>Me contacter</h2>
 
     <p>
+
+
+        <a href="courcelles@ipgp.fr" class="btn-mail">📩 Me contacter</a>
+
+<style>
+.btn-mail {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #007acc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-mail:hover {
+    background-color: #005fa3;
+}
+</style>
       Tu peux m'écrire à :
       <!--
         Lien "mailto:" : quand on clique dessus, il ouvre le logiciel de courrier (ou Gmail)
         pour envoyer un mail à l'adresse indiquée.
         Remplace ton.email@example.com par ta vraie adresse si tu veux.
       -->
-      <a href="courcelles@ipgp.fr">courcelles@ipgp.fr</a>
+      <a href="mailto:courcelles@ipgp.fr">courcelles@ipgp.fr</a>
     </p>
   </section>
 
@@ -130,5 +173,4 @@
   </footer>
 </body>
 </html>
-
 
