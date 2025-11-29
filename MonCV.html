@@ -1,217 +1,80 @@
 <!DOCTYPE html>
-<!-- Indique au navigateur qu'on utilise HTML5 (version moderne de HTML) -->
 <html lang="fr">
-<!-- Attribut lang="fr" : la langue principale de la page est le français -->
 <head>
-  <!-- Indique l'encodage des caractères (pour bien afficher les accents, symboles, emojis, etc.) -->
   <meta charset="UTF-8">
-
-  <!-- Texte qui s'affiche dans l'onglet du navigateur -->
-  <title>Mon premier site</title>
-
-  <!-- Partie CSS intégrée dans la page.
-       Le CSS sert à définir l'apparence (mise en forme) de la page. -->
-  <style>
-    /* Style global du corps de la page (tout le contenu visible) */
-    body {
-      font-family: Arial, sans-serif; /* Choix de la police d'écriture */
-      max-width: 800px;              /* Largeur maximale du contenu, pour ne pas être trop large sur grand écran */
-      margin: 40px auto;             /* Marge en haut et en bas (40px), et centrage horizontal (auto) */
-      line-height: 1.6;              /* Espacement entre les lignes de texte */
-    }
-
-    /* Style de l'en-tête (zone du haut avec le titre et le menu) */
-    header {
-      text-align: center;  /* Centre le texte à l'intérieur du header */
-      margin-bottom: 40px; /* Ajoute un espace sous le header */
-    }
-
-    /* Style pour le titre principal (h1) */
-    h1 {
-      margin-bottom: 0; /* Retire la marge par défaut en dessous du h1
-                           pour le rapprocher du paragraphe qui suit */
-    }
-
-    /* Style des liens (<a>) qui se trouvent à l'intérieur de la navigation (<nav>) */
-    nav a {
-      margin: 0 10px;         /* Ajoute un espace à gauche et à droite de chaque lien */
-      text-decoration: none;  /* Enlève le soulignement des liens */
-    }
-
-    /* Style appliqué à chaque section de contenu (<section>) */
-    section {
-      margin-bottom: 30px; /* Espace en dessous de chaque section pour bien les séparer visuellement */
-    }
-
-    /* Style du pied de page (<footer>) */
-    footer {
-      text-align: center;  /* Centre le texte du footer */
-      font-size: 0.9em;    /* Rend le texte un peu plus petit que la taille normale (1em) */
-      color: #555;         /* Couleur de texte gris foncé (moins agressif que le noir pur) */
-      margin-top: 40px;    /* Ajoute un espace au-dessus du footer */
-    }
-  </style>
+  <title>Mon Parcours</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- En-tête du site : généralement on y trouve le logo, le titre, le menu -->
+
   <header>
-    <!-- Titre principal de la page (il ne devrait y avoir qu'un seul h1 par page) -->
-    <h1>Bienvenue sur mon site</h1>
-    
+    <h1>Mon Parcours</h1>
 
-
-    <!-- Petit texte introductif sous le titre -->
-    <p>Ceci est mon tout premier site en HTML 🎉
-<a href="https://www.linkedin.com/in/matthieu-courcelles-a90273109/">
-  Mon LinkedIn
-</a>
-    
-
-    <!-- Zone de navigation : liens pour se déplacer dans la page ou vers d'autres pages -->
     <nav>
-      <!--
-        Chaque lien a un href="#quelquechose".
-        Le # indique qu'on pointe vers un élément de la page qui a un id correspondant.
-        Par exemple, href="#about" va faire défiler la page jusqu'à l'élément qui a id="about".
-      -->
-      <a href="#about">À propos</a>
+      <a href="index.html">Accueil</a>
       <a href="blog.html">Blogue</a>
-      <a href="MonCV.html">Mon CV</a>
     </nav>
   </header>
 
-  <!-- Première section de contenu : présentation personnelle -->
-  <section id="about">
-    <!-- Titre de niveau 2 (moins important que h1, mais plus que le texte normal) -->
-    <h2>À propos de moi</h2>
-    
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Paragraphe de texte -->
-    <p>
-      Bonjour ! Je m'appelle MATTTTTTTTTTTTTTT et j'apprends à créer des (un seul) sites web.
-      C'est ma toute première page en HTML.
-    </p>
-
-
-
-
-
-
-    <figure style="text-align:center;">
-  <img src="image/images.jpg" style="width:200px;">
-  <figcaption>Rare photo de moi durant  une pause pendant la création du chef d'oeuvre</figcaption>
-</figure>
-
-
-
-  </section>
-
-  <!-- Deuxième section : liste de projets -->
-  <section id="projects">
-    <h2>Mes projets</h2>
-
-    <!-- Liste à puces : <ul> = unordered list (liste non ordonnée), <li> = list item (élément de liste) -->
-    <ul>
-      <li>Projet 1 : …</li>
-      <li>Projet 2 : …</li>
-      <li>Projet 3 : …</li>
-      <!-- Tu peux ajouter autant de <li> que tu veux pour lister d'autres projets -->
-    </ul>
-  </section>
-
-  <!-- Troisième section : informations de contact -->
+  <!-- ========= CONTENU SPÉCIFIQUE À CHAQUE PAGE ========= -->
   
-  
-  
-  
-  <section id="contact">
-  <h2>Me contacter</h2>
 
-  <p>Si tu veux me joindre, tu peux :</p>
 
-  <!-- Bouton principal -->
-  <a href="mailto:courcelles@ipgp.fr" class="btn-mail">📩 M’envoyer un email</a>
+    <section id="cv">
+  
 
-  <p style="margin-top: 15px;">
-    Ou écrire directement à :
-    <a href="mailto:courcelles@ipgp.fr" class="mail-link">courcelles@ipgp.fr</a>
-  </p>
+  <div class="cv-wrapper">
+    <div class="cv-header">
+      <span>📄 CV Matthieu Courcelles</span>
+    </div>
+
+    <iframe 
+       src="docs/-.pdf"
+       class="cv-frame">
+    </iframe>
+  </div>
 </section>
 
 <style>
-/* Bouton bleu */
-.btn-mail {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #007acc;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: 0.2s;
-}
-.btn-mail:hover {
-    background-color: #005fa3;
+/* Conteneur stylé autour de l’iframe */
+.cv-wrapper {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 30px auto;
 }
 
-/* Petit lien mail en texte */
-.mail-link {
-    color: #007acc;
-    font-weight: bold;
-    text-decoration: none;
+/* En-tête au-dessus du PDF */
+.cv-header {
+  padding: 12px 18px;
+  background: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 12px 12px 0 0;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
 }
-.mail-link:hover {
-    text-decoration: underline;
+
+/* Iframe stylée */
+.cv-frame {
+  width: 100%;
+  height: 900px;
+  border: none;
+  border-radius: 0 0 12px 12px;
 }
 </style>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
-  <!-- Pied de page : affiché en bas de la page -->
+  <!-- ==================================================== -->
+
   <footer>
-    <!--
-      &copy; est un code HTML qui affiche le symbole ©
-      2025 est l'année, tu peux la changer.
-    -->
-    &copy; 2025 - Mon premier site
+    © 2025 - Mon site
   </footer>
+
 </body>
 </html>
-
