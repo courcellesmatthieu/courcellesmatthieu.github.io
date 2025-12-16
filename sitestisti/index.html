@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Matthieu Courcelles explorations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Bandeau principal avec titre cliquable + navigation -->
+  <header>
+    <div class="container">
+      <h1><a href="index.html">Matthieu Courcelles explorations</a></h1>
+      <nav>
+        <a class="active" href="index.html">Accueil</a>
+        <a href="blog.html">Blog</a>
+        <a href="MonCV.html">Mon CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Bloc de presentation -->
+      <section class="hero" id="about">
+        <h2 class="section-title">Bienvenue</h2>
+        <p>Ceci est mon premier site en HTML. 
+          eN CONSTrucTION
+        </p>
+        <p>
+          <a class="button" href="https://www.linkedin.com/in/matthieu-courcelles-a90273109/" target="_blank" rel="noopener noreferrer">
+            Voir mon LinkedIn
+          </a>
+        </p>
+      </section>
+
+      <!-- Section a propos avec photo -->
+      <section class="card" aria-labelledby="title-about">
+        <h3 id="title-about" class="section-title">A propos de moi</h3>
+        <p>Bonjour ! Je m'appelle Matthieu et j'apprends a creer des sites web. Ce projet me sert de terrain d'experimentation.</p>
+        <figure>
+          <img src="../docs/images.jpg" alt="Photo ">
+          <figcaption>Pause bien meritee pendant la creation du site.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Projets listes -->
+      <section class="card projects" id="projects" aria-labelledby="title-projects">
+        <h3 id="title-projects" class="section-title">Mes projets</h3>
+        <ul>
+          <li>Projet 1 : en cours.</li>
+          <li>Projet 2 : en cours.</li>
+          <li>Projet 3 : en cours.</li>
+        </ul>
+      </section>
+
+      <!-- Coordonnees et lien mail -->
+      <section class="card" id="contact" aria-labelledby="title-contact">
+        <h3 id="title-contact" class="section-title">Me contacter</h3>
+        <p>Si tu veux me joindre, tu peux :</p>
+        <a href="mailto:courcelles@ipgp.fr" class="button">M'envoyer un email</a>
+        <p style="margin-top: 12px;">Ou ecrire directement a : <a href="mailto:courcelles@ipgp.fr">courcelles@ipgp.fr</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">&copy; 2025 - Matthieu Courcelles explorations</div>
+  </footer>
+  <script text="text/javascript" src="index.js"></script>
+</body>
+</html>
