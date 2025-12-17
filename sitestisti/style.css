@@ -253,6 +253,12 @@ figcaption {
   color: #677389;
 }
 
+.photo-legend {
+  margin-top: 10px;
+  text-align: center;
+  color: #677389;
+}
+
 .blog-photos figure {
   margin: 0;
 }
