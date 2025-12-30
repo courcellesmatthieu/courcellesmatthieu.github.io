@@ -382,3 +382,22 @@ footer {
   }
 }
 
+
+.inline-link {
+  color: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(47, 92, 143, 0.45);
+  background: linear-gradient(transparent 60%, rgba(47, 92, 143, 0.12) 60%);
+  padding: 0 2px;
+  border-radius: 4px;
+  transition: color 0.2s ease, background 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.inline-link:hover {
+  color: var(--accent-strong);
+  text-decoration-color: var(--accent-strong);
+  background: rgba(47, 92, 143, 0.18);
+}
