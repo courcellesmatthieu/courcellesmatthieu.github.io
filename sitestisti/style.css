@@ -314,6 +314,19 @@ figcaption {
   height: auto;
 }
 
+.blog-photos .figure-fill {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-photos .figure-fill img {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .blog-photos figure.rotate-right img {
   transform: rotate(90deg);
   max-height: 420px;
@@ -400,4 +413,10 @@ footer {
   color: var(--accent-strong);
   text-decoration-color: var(--accent-strong);
   background: rgba(47, 92, 143, 0.18);
+}
+
+@media (min-width: 720px) {
+  .blog-photos .map-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  }
 }
