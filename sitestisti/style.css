@@ -334,17 +334,17 @@ figcaption {
 }
 
 .cv-wrapper {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  box-shadow: var(--shadow-soft);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
   overflow: hidden;
 }
 
 .cv-header {
-  padding: 14px 18px;
-  background: #f0f3f9;
-  border-bottom: 1px solid var(--border);
+  padding: 0 0 10px;
+  background: transparent;
+  border-bottom: none;
   font-weight: 700;
   color: var(--text);
 }
@@ -354,6 +354,16 @@ figcaption {
   height: 720px;
   border: none;
   display: block;
+  object-fit: contain;
+}
+
+.cv-wrapper.cv-large .cv-frame {
+  height: 114vh;
+  max-height: 1690px;
+}
+
+.cv-wrapper.cv-poster .cv-frame {
+  height: 792px;
 }
 
 .page-404 {
