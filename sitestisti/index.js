@@ -31,12 +31,14 @@ const copyTextToClipboard = async (text) => {
 };
 
 const setupMailLinks = () => {
-  document.querySelectorAll('a[href^="mailto"]').forEach(link => link.addEventListener('click', (e) => {
-    if (copyTextToClipboard(link.href)) {
-      e.preventDefault();
-      alert('Email copié dans votre presse-papier');
-    }
-  }));
+  document.querySelectorAll('a[href^="mailto"]').forEach((link) => {
+    link.addEventListener('click', async () => {
+      const copied = await copyTextToClipboard(link.href);
+      if (copied) {
+        alert('Email copie dans votre presse-papier');
+      }
+    });
+  });
 };
 
 const isZoomableImage = (img) => {
