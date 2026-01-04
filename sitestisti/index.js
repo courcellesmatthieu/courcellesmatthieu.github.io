@@ -30,14 +30,17 @@ const copyTextToClipboard = async (text) => {
   }
 };
 
-const setupMailLinks = () => {
-  document.querySelectorAll('a[href^="mailto"]').forEach((link) => {
-    link.addEventListener('click', async () => {
-      const copied = await copyTextToClipboard(link.href);
-      if (copied) {
-        alert('Email copie dans votre presse-papier');
-      }
-    });
+const setupCopyEmailButton = () => {
+  const copyBtn = document.querySelector('[data-copy-email]');
+  if (!copyBtn) return;
+
+  copyBtn.addEventListener('click', async (event) => {
+    event.preventDefault();
+    const email = copyBtn.dataset.copyEmail || '';
+    const copied = await copyTextToClipboard(email);
+    if (copied) {
+      alert('Email copie dans votre presse-papier');
+    }
   });
 };
 
@@ -116,6 +119,6 @@ const setupImageModal = () => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  setupMailLinks();
+  setupCopyEmailButton();
   setupImageModal();
 });
