@@ -146,6 +146,12 @@ p {
   color: var(--muted);
 }
 
+.hero-list {
+  margin: 0 0 16px;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
 .hero,
 .card {
   background: transparent;
