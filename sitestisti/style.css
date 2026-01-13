@@ -1,10 +1,10 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Newsreader:wght@600;700&display=swap");
 
 :root {
-  --surface: #f6f4ef;
+  --surface: #f9f9f7;
   --panel: #ffffff;
-  --text: #1e262f;
-  --muted: #4f5d6a;
+  --text: #000000;
+  --muted: #111111;
   --accent: #2f5c8f;
   --accent-strong: #23466c;
   --border: #e4e0d6;
@@ -284,7 +284,7 @@ figure {
 
 figure img {
   max-width: 240px;
-  border-radius: 8px;
+  border-radius: 0;
   box-shadow: none;
 }
 
@@ -380,7 +380,7 @@ figcaption {
 .page-404 img {
   max-width: 280px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0;
   box-shadow: var(--shadow-soft);
 }
 
@@ -459,7 +459,7 @@ footer {
   width: auto;
   height: auto;
   object-fit: contain;
-  border-radius: 12px;
+  border-radius: 0;
   box-shadow: var(--shadow-strong);
   background: #0b1627;
 }
