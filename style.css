@@ -50,7 +50,7 @@ a:hover {
 
 header {
   background: linear-gradient(120deg, rgba(10, 16, 35, 0.72), rgba(23, 44, 68, 0.6)),
-    url("../docs/WhatsApp Image 2025-09-30 at 13.34.12.jpeg");
+    url("docs/WhatsApp Image 2025-09-30 at 13.34.12.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -214,7 +214,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../docs/WhatsApp Image 2025-09-30 at 13.34.12.jpeg");
+  background-image: url("docs/WhatsApp Image 2025-09-30 at 13.34.12.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
